@@ -1,0 +1,31 @@
+[package]
+name = "move-stackless-bytecode"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+move-model.workspace = true
+move-binary-format.workspace = true
+move-core-types.workspace = true
+move-command-line-common.workspace = true
+move-compiler.workspace = true
+
+codespan.workspace = true
+codespan-reporting = { workspace = true, features = ["serde", "serialization"] }
+ethnum.workspace = true
+num.workspace = true
+im.workspace = true
+itertools.workspace = true
+log.workspace = true
+serde.workspace = true
+petgraph.workspace = true
+
+[dev-dependencies]
+move-stdlib.workspace = true
+datatest-stable.workspace = true
+anyhow.workspace = true
+regex.workspace = true

@@ -1,0 +1,16 @@
+[package]
+name = "move-proc-macros"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote.workspace = true
+syn = { version = "2", features = ["full", "fold", "extra-traits"] }
+enum-compat-util.workspace = true

@@ -1,0 +1,27 @@
+[package]
+name = "move-vm-types"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+proptest = { workspace = true, optional = true }
+serde = { workspace = true, features = ["derive", "rc"] }
+smallvec.workspace = true
+
+bcs.workspace = true
+
+move-core-types.workspace = true
+move-binary-format.workspace = true
+move-vm-profiler.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+
+[features]
+default = []
+fuzzing = ["proptest", "move-binary-format/fuzzing"]
+

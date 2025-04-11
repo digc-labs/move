@@ -1,0 +1,19 @@
+[package]
+name = "move-symbol-pool"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+once_cell.workspace = true
+serde.workspace = true
+phf.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+
+[features]
+default = []

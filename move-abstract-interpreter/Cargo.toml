@@ -1,0 +1,18 @@
+[package]
+name = "move-abstract-interpreter"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+move-binary-format.workspace = true
+move-bytecode-verifier-meter.workspace = true
+
+[dev-dependencies]
+itertools.workspace = true
+
+[features]
+default = []
