@@ -39,6 +39,7 @@ members = [
     "move-bytecode-viewer",
     "move-cli",
     "move-analyzer",
+    "move-transactional-test-runner",
 ]
 
 [workspace.package]
@@ -88,6 +89,7 @@ move-package = { path =  "move-package" }
 move-bytecode-viewer = { path = "move-bytecode-viewer" }
 move-cli = { path = "move-cli" }
 move-analyzer = { path =  "move-analyzer" }
+move-transactional-test-runner = { path = "move-transactional-test-runner" }
 
 aes-gcm = "0.8.0"
 anyhow = "1.0.52"
